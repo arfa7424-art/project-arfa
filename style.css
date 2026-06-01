@@ -1,0 +1,202 @@
+* *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#081b29;
+  overflow-x:hidden;
+}
+
+.wrap_navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+
+  z-index:999;
+
+  padding:20px 7%;
+
+  background:#081b29;
+
+  border-bottom:1px solid rgba(0,238,255,0.1);
+}
+
+.navbar-brand h4{
+  color:#00eeff;
+  font-weight:700;
+}
+
+.navbar-nav a{
+  color:white !important;
+  margin-left:30px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.navbar-nav a:hover{
+  color:#00eeff !important;
+}
+
+
+.pembungkus{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding-top:100px;
+}
+
+
+.nama h1{
+  color:white;
+  font-size:65px;
+  font-weight:700;
+  line-height:1.2;
+}
+
+.asal h3{
+  color:#00eeff;
+  margin-top:10px;
+  font-weight:500;
+}
+
+.deskripsi p{
+  color:#d1d5db;
+  line-height:1.8;
+  margin-top:20px;
+  max-width:500px;
+}
+
+
+.tombol a{
+  display:inline-block;
+  margin-top:20px;
+
+  padding:13px 30px;
+
+  border:2px solid #00eeff;
+  border-radius:40px;
+
+  color:white;
+  text-decoration:none;
+
+  transition:0.3s;
+}
+
+.tombol a:hover{
+  background:#00eeff;
+  color:#081b29;
+
+  box-shadow:
+  0 0 10px #00eeff,
+  0 0 40px #00eeff;
+}
+
+
+.pembungkus-tombol{
+  display:flex;
+  gap:15px;
+  margin-top:10px;
+}
+
+.tombol-sosmed a{
+  width:50px;
+  height:50px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  border-radius:50%;
+  border:2px solid #00eeff;
+
+  color:white;
+  font-size:20px;
+
+  text-decoration:none;
+
+  transition:0.3s;
+}
+
+.tombol-sosmed a:hover{
+  background:#00eeff;
+  color:#081b29;
+
+  box-shadow:
+  0 0 10px #00eeff,
+  0 0 40px #00eeff;
+}
+
+.text-center{
+  position:relative;
+}
+
+
+.text-center::before{
+  content:'';
+
+  position:absolute;
+
+  width:420px;
+  height:420px;
+
+  background:#00eeff;
+
+  border-radius:50%;
+
+  filter:blur(120px);
+
+  opacity:0.25;
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%,-50%);
+}
+
+
+
+img{
+  width:360px !important;
+
+  position:relative;
+  z-index:2;
+
+  border-radius:20px;
+
+  border:3px solid rgba(255,255,255,0.1);
+
+  box-shadow:
+  0 0 20px rgba(0,238,255,0.3),
+  0 0 60px rgba(0,238,255,0.2);
+}
+
+@media(max-width:991px){
+
+  .pembungkus{
+    text-align:center;
+    padding-top:140px;
+  }
+
+  .nama h1{
+    font-size:42px;
+  }
+
+  .deskripsi p{
+    margin:auto;
+    margin-top:20px;
+  }
+
+  .pembungkus-tombol{
+    justify-content:center;
+  }
+
+  img{
+    width:280px !important;
+    margin-top:50px;
+  }
+
+}
